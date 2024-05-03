@@ -134,4 +134,26 @@ body {
 }
 
 
+.hero-body {
+  overflow: hidden; /* Prevents scrollbars when images enlarge */
+}
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Creates a responsive grid */
+  gap: 10px; /* Space between images */
+  overflow: visible; /* This hides the overflow from the enlarged images */
+}
+
+.grid-image {
+  width: 150px; /* Specify fixed width */
+  height: 150px; /* Specify fixed height */
+  object-fit: cover; /* Ensures the image covers the space without distorting */
+  transition: transform 0.3s ease;
+  /* display: block; */
+}
+
+.grid-image:hover {
+  transform: scale(3);
+  z-index: 1;
+}
