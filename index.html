@@ -123,24 +123,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -159,26 +141,23 @@
 <!-- End paper abstract -->
 
 <!-- Background -->
-<section class="section hero is-light">
+<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Background</h2>
+        <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            Rotated object detection, also known as arbitrary-oriented object detection, aims to identify and locate objects in images with arbitrary orientation. In this task, the oriented directions of objects differ significantly across different images, with multiple orientations possible within a single image. This inherent complexity poses a challenge for standard backbone network models to extract high-quality features of these arbitrarily oriented objects. In addition, complex backgrounds, dense distributions, and heavy occlusions in images make accurate identification even more difficult.
+            Rotated object detection, or arbitrary-oriented object detection, is the process of identifying and locating objects within images that may be oriented in any direction. This task is particularly challenging because objects can appear in varying orientations, even within the same image, and are often set against complex backgrounds, densely packed together, or obscured by occlusions. Unlike traditional object detection that assumes objects align with the image axes, rotated object detection must handle objects that are arbitrarily oriented—a common scenario in natural scenes.
           </p>
           <p>
-            In contrast to generic object detection, where object instances are assumed to be aligned with the image axes, objects within the natural scenes often exhibit arbitrary orientations. This is commonly observed in the field of remote sensing detection, text detection "in the wild", face detection, retail scene detection, medical physics, industrial inspection, etc.
+            This complexity is often seen in areas like remote sensing, text detection in natural settings, face recognition, retail environments, medical imaging, and industrial inspections. Standard backbone network models, designed primarily for axis-aligned object detection, struggle with the unique demands of detecting rotated objects. These models frequently fail to capture high-quality features of such objects due to their architecture not accounting for arbitrary orientations.
           </p>
           <p>
-            Despite the significant differences between the images with generic items and those with oriented objects, the design of conventional visual backbones has largely overlooked the inherent characteristics. As a result, the architecture of these models may be sub-optimal in the rotated object detection task.
+            The advantages of rotated object detection over traditional methods are clear: it typically includes less background within the detection box and can provide additional information through the orientation of the object, which may indicate its pose.
           </p>
           <p>
-            Therefore, in this project, we want to address the above challenges since rotated detection will strictly be superior to axis-aligned detection as there is less background within the box and the orientation can potentially convey object pose information.
-          </p>
-          <p>
-            Lastly, rotated object detection finds its application in various domains (Figure 1) such as autonomous vehicles, sports tracking and analysis, manufacturing and quality control, satellite image analysis, urban development planning, etc. This breadth of application underscores the significance of investing time and effort into addressing this problem.
+            Given its wide range of applications—including autonomous vehicles, sports analysis, manufacturing quality control, satellite imagery, and urban planning—enhancing rotated object detection is crucial. This project aims to tackle the inherent challenges in this area, striving for a detection method that surpasses the limitations of axis-aligned models and better suits the varied orientations of objects in real-world scenarios.
           </p>
         </div>
       </div>
@@ -187,6 +166,35 @@
 </section>
 <!-- End paper background -->
 
+<!-- Related Work -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Related Work</h2>
+          <div class="content has-text-justified">
+            <p>
+                Current popular detection methods can be divided into two-stage detectors and single-stage detectors.
+                <div class="flex-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                    <div class="flex-item" style="flex: 1 1 48%; margin-right: 4%;">
+                        <h3>Two Stage Object Detectors</h3>
+                        <p>Two-stage object detectors are slow but have higher accuracy.</p>
+                        <p>They generate candidate regions through special modules, classify them, and finally determine the detection results using non-maximal suppression.</p>
+                        <p>Examples include R-CNN, Fast R-CNN, and Faster R-CNN.</p>
+                    </div>
+                    <div class="flex-item" style="flex: 1 1 48%;">
+                        <h3>Single Stage Object Detectors</h3>
+                        <p>Single-stage object detectors are fast but have lower accuracy.</p>
+                        <p>They adopt the idea of target regression and only need to perform feature extraction once to detect the target.</p>
+                        <p>Examples include YOLO, SSD.</p>
+                    </div>
+                </div>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -295,8 +303,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+      <iframe src="https://uwprod-my.sharepoint.com/personal/kumar273_wisc_edu/_layouts/15/Doc.aspx?sourcedoc={440e818a-e7d1-4084-81c1-248726773053}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="550" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
         
       </div>
     </div>
