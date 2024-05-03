@@ -427,6 +427,67 @@
   </section>
   <!-- End of datasets -->
 
+  <!-- Results -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Evaluation Results</h2>
+          <div class="content has-text-justified">
+            <p>
+              Our study leverages two prominent datasets within the object detection field, UCAS-AOD and DOTA. These
+              datasets are pivotal for the development and validation of our object detection models, providing
+              extensive image resources and annotations.
+            </p>
+            <div class="flex-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+              <div class="flex-item" style="flex: 1 1 48%; margin-right: 4%; display: flex; flex-direction: column;">
+                <h3 class="title is-4">UCAS-AOD Dataset Performance</h3>
+                <p>
+                  Our model achieved significant improvements on the UCAS-AOD dataset, recording an overall mean Average
+                  Precision (mAP) of 0.95. This demonstrates superior performance compared to traditional two-stage
+                  models.
+                </p>
+                <div class="image-container" style="margin-bottom: 20px;">
+                  <img src="static/images/ucas_result.png" alt="Metrics for UCAS-AOD Dataset"
+                    style="width: 100%; height: auto;">
+                  <div class="caption">Performance metrics for UCAS-AOD Dataset</div>
+                </div>
+                <p>
+                  Our single-stage model not only simplified the processing pipeline but also matched or exceeded the
+                  performance metrics of conventional two-stage models for the UCAS dataset.
+                </p>
+                <div class="image-container">
+                  <img src="static/images/ucas_result_otherApproaches.png"
+                    alt="Comparison of our single-stage approach with other 2 stage approaches for UCAS Dataset"
+                    style="width: 100%; height: auto;">
+                  <div class="caption">Comparison with other two-stage models</div>
+                </div>
+              </div>
+              <div class="flex-item" style="flex: 1 1 48%; display: flex; flex-direction: column;">
+                <h3 class="title is-4">DOTA Dataset Insights</h3>
+                <p>
+                  The DOTA dataset revealed a higher mean Average Precision for detecting planes, cars, and ships.
+                  However, performance varied across different classes, reflecting challenges due to class imbalance.
+                </p>
+                <div class="image-container">
+                  <img src="static/images/dota_result.png" alt="Metrics for DOTA Dataset"
+                    style="width: 100%; height: auto;">
+                  <div class="caption">Performance metrics for DOTA Dataset</div>
+                </div>
+                <p>
+                  Further insights from the DOTA dataset highlight the need for more nuanced approaches to tackle the
+                  lower detection accuracies in less represented classes. Future research efforts aim to refine our
+                  model's performance across these challenging scenarios.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of results -->
+
   <!-- Demo/Outputs -->
   <section class="section">
     <div class="container">
