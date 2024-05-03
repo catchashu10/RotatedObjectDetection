@@ -109,8 +109,7 @@
 
                 <!-- Presentation Link -->
                 <span class="link-block">
-                  <a href="#presentation"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="#presentation" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-powerpoint"></i>
                     </span>
@@ -201,33 +200,51 @@
           <h2 class="title is-3">Exploration of Related Work in Object Detection Technologies</h2>
           <div class="content has-text-justified">
             <p>
-                In the evolving landscape of object detection, current methodologies can be broadly categorized into two distinct types: two-stage detectors and single-stage detectors. Each category utilizes unique techniques and algorithms to address the intricate challenges of object detection, catering to different needs in terms of speed and accuracy.
+              In the evolving landscape of object detection, current methodologies can be broadly categorized into two
+              distinct types: two-stage detectors and single-stage detectors. Each category utilizes unique techniques
+              and algorithms to address the intricate challenges of object detection, catering to different needs in
+              terms of speed and accuracy.
             </p>
             <div class="flex-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-                <div class="flex-item" style="flex: 1 1 48%; margin-right: 4%;">
-                    <h3 class="title is-4">Two-Stage Object Detectors</h3>
-                    <p>
-                        Two-stage object detectors exemplify a refined approach where accuracy is paramount. These methods are characterized by their sequential processing where initial regions of interest are proposed and then refined through classification and localization.
-                    </p>
-                    <p>
-                        The process begins with the generation of candidate regions through specialized modules, which are meticulously crafted to propose potential areas of interest. This is followed by a rigorous classification stage, wherein each candidate is evaluated and classified. Finally, non-maximal suppression techniques are employed to eliminate redundant detections, ensuring that each object is uniquely identified. 
-                    </p>
-                    <p>
-                        Esteemed examples of this methodology include the R-CNN series, encompassing the original R-CNN, Fast R-CNN, and the Faster R-CNN, each iteration building on its predecessor to enhance both speed and accuracy.
-                    </p>
-                </div>
-                <div class="flex-item" style="flex: 1 1 48%;">
-                    <h3 class="title is-4">Single-Stage Object Detectors</h3>
-                    <p>
-                        In contrast to their two-stage counterparts, single-stage object detectors prioritize speed, enabling real-time processing capabilities. These detectors streamline the detection process by eliminating the proposal generation phase.
-                    </p>
-                    <p>
-                        This methodology leverages the concept of direct target regression and requires only a single pass through the neural network to extract features and detect objects. The simplicity of this approach allows for rapid detection speeds, albeit typically at a compromise in accuracy compared to two-stage methods.
-                    </p>
-                    <p>
-                        Prominent models within this category include YOLO (You Only Look Once) and SSD (Single Shot MultiBox Detector), both of which are celebrated for their efficiency and are widely utilized in applications requiring real-time processing.
-                    </p>
-                </div>
+              <div class="flex-item" style="flex: 1 1 48%; margin-right: 4%;">
+                <h3 class="title is-4">Two-Stage Object Detectors</h3>
+                <p>
+                  Two-stage object detectors exemplify a refined approach where accuracy is paramount. These methods are
+                  characterized by their sequential processing where initial regions of interest are proposed and then
+                  refined through classification and localization.
+                </p>
+                <p>
+                  The process begins with the generation of candidate regions through specialized modules, which are
+                  meticulously crafted to propose potential areas of interest. This is followed by a rigorous
+                  classification stage, wherein each candidate is evaluated and classified. Finally, non-maximal
+                  suppression techniques are employed to eliminate redundant detections, ensuring that each object is
+                  uniquely identified.
+                </p>
+                <p>
+                  Esteemed examples of this methodology include the R-CNN series, encompassing the original R-CNN, Fast
+                  R-CNN, and the Faster R-CNN, each iteration building on its predecessor to enhance both speed and
+                  accuracy.
+                </p>
+              </div>
+              <div class="flex-item" style="flex: 1 1 48%;">
+                <h3 class="title is-4">Single-Stage Object Detectors</h3>
+                <p>
+                  In contrast to their two-stage counterparts, single-stage object detectors prioritize speed, enabling
+                  real-time processing capabilities. These detectors streamline the detection process by eliminating the
+                  proposal generation phase.
+                </p>
+                <p>
+                  This methodology leverages the concept of direct target regression and requires only a single pass
+                  through the neural network to extract features and detect objects. The simplicity of this approach
+                  allows for rapid detection speeds, albeit typically at a compromise in accuracy compared to two-stage
+                  methods.
+                </p>
+                <p>
+                  Prominent models within this category include YOLO (You Only Look Once) and SSD (Single Shot MultiBox
+                  Detector), both of which are celebrated for their efficiency and are widely utilized in applications
+                  requiring real-time processing.
+                </p>
+              </div>
             </div>
             <div class="image-container">
               <img src="static/images/rcnns.png" alt="RCNNs architecture">
@@ -238,100 +255,177 @@
               <div class="caption">Architecture of single stage YOLO model</div>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Methodology -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Methodology</h2>
-        <div class="content has-text-justified">
-          <p>
-            We now know the context around oriented bounding box detection. So how would we go around solutioning for this problem statement? Luckily we have a plethora of models to choose and adapt from. The catch? Like everything else in life there's no free meal here as well!​
-          </p>
-          <div class="baseline">
-            <h3>Baseline establishment with Oriented RCNNs</h3>
+  <!-- Methodology -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Methodology</h2>
+          <div class="content has-text-justified">
             <p>
-              We want to have a robust and stable baseline. For this, we chose oriented RCNN since it is one of the state of the art models that is consistently used as a baseline in some of the more recent papers.
+              We now know the context around oriented bounding box detection. So how would we go around solutioning for
+              this problem statement? Luckily we have a plethora of models to choose and adapt from. The catch? Like
+              everything else in life there's no free meal here as well!​
             </p>
-            <div class="image-container">
-              <img src="static/images/oriented_rcnns.jpeg" alt="Oriented RCNNS">
-              <div class="caption">Architecture details of Oriented RCNNs</div>
+            <div class="baseline">
+              <h3>Baseline establishment with Oriented RCNNs</h3>
+              <p>
+                We want to have a robust and stable baseline. For this, we chose oriented RCNN since it is one of the
+                state of the art models that is consistently used as a baseline in some of the more recent papers.
+              </p>
+              <div class="image-container">
+                <img src="static/images/oriented_rcnns.jpeg" alt="Oriented RCNNS">
+                <div class="caption">Architecture details of Oriented RCNNs</div>
+              </div>
+              <p>
+                We used the implementation provided by MMRotate, a toolbox that builds on PyTorch and is geared towards
+                oriented bounding box training and inference. MMRotate consists of 4 main parts, datasets, models, core
+                and apis.
+              </p>
+              <ul>
+                <li>"datasets" is for data loading and data augmentation. In this part, we support various datasets for
+                  rotated object detection algorithms, useful data augmentation transforms in pipelines for
+                  pre-processing image.</li>
+                <li>"models" contains models and loss functions.</li>
+                <li>"core" provides evaluation tools for model training and evaluation.</li>
+                <li>"apis" provides high-level APIs for models training, testing, and inference.</li>
+              </ul>
+              <div class="image-container">
+                <img src="static/images/mmrotate_framework.png" alt="MMRotate">
+                <div class="caption">Module design of MMRotate</div>
+              </div>
+              <p>Now we observed some stellar results on some classes with large confidence values in our reference
+                dataset but the mean average precision or mAP - which is the figure of merit we will be using to measure
+                our performance tapered off pretty quickly on some of the sparser classes.​</p>
             </div>
-            <p>
-              We used the implementation provided by MMRotate, a toolbox that builds on PyTorch and is geared towards oriented bounding box training and inference. MMRotate consists of 4 main parts, datasets, models, core and apis.
-            </p>
-            <ul>
-              <li>"datasets" is for data loading and data augmentation. In this part, we support various datasets for rotated object detection algorithms, useful data augmentation transforms in pipelines for pre-processing image.</li>
-              <li>"models" contains models and loss functions.</li>
-              <li>"core" provides evaluation tools for model training and evaluation.</li>
-              <li>"apis" provides high-level APIs for models training, testing, and inference.</li>
-            </ul>
-            <div class="image-container">
-              <img src="static/images/mmrotate_framework.png" alt="MMRotate">
-              <div class="caption">Module design of MMRotate</div>
-            </div>
-            <p>Now we observed some stellar results on some classes with large confidence values in our reference dataset but the mean average precision or mAP - which is the figure of merit we will be using to measure our performance tapered off pretty quickly on some of the sparser classes.​</p>
-          </div>
-          <div class="singe-stage-detector">
-            <h3>Single Stage Detector based on YOLOv7</h3>
-            <p>
-              Single stage models have seen significant strides in recent times. The real-time nature of inference and small footprint is desirable in many use cases. The lower mAP value is something the research community has been focussing on and iteratively improving upon.
-            </p>
-            <p>
-              We combine YOLOv7 model and loss function from R3Det for arbitrarily-oriented object detection. The loss function is given by
+            <div class="singe-stage-detector">
+              <h3>Single Stage Detector based on YOLOv7</h3>
+              <p>
+                Single stage models have seen significant strides in recent times. The real-time nature of inference and
+                small footprint is desirable in many use cases. The lower mAP value is something the research community
+                has been focussing on and iteratively improving upon.
+              </p>
+              <p>
+                We combine YOLOv7 model and loss function from R3Det for arbitrarily-oriented object detection. The loss
+                function is given by
               <div class="formula">
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mi>L</mi>
                   <mo>=</mo>
                   <msub>
                     <mi>&lambda;</mi>
-                    <sub><mi>coord</mi></sub>
+                    <sub>
+                      <mi>coord</mi>
+                    </sub>
                   </msub>
                   <mi>L</mi><sub>reg</sub>
                   <mo>+</mo>
                   <msub>
                     <mi>&lambda;</mi>
-                    <sub><mi>conf</mi></sub>
+                    <sub>
+                      <mi>conf</mi>
+                    </sub>
                   </msub>
                   <mi>L</mi><sub>conf</sub>
                   <mo>+</mo>
                   <msub>
                     <mi>&lambda;</mi>
-                    <sub><mi>cls</mi></sub>
+                    <sub>
+                      <mi>cls</mi>
+                    </sub>
                   </msub>
                   <mi>L</mi><sub>cls</sub>
                   <mo>+</mo>
                   <msub>
                     <mi>&lambda;</mi>
-                    <sub><mi>theta</mi></sub>
+                    <sub>
+                      <mi>theta</mi>
+                    </sub>
                   </msub>
                   <mi>L</mi><sub>theta</sub>
                 </math>
               </div>
               <p>Where:</p>
               <ul>
-                <li><math><mi>L</mi><sub>reg</sub></math> is the regression loss, computed as the mean of (1 - CIoU) for each bounding box.</li>
-                <li><math><mi>L</mi><sub>conf</sub></math> is the confidence loss, using binary cross-entropy with or without focal loss depending on objectness scores.</li>
-                <li><math><mi>L</mi><sub>cls</sub></math> is the class loss, using binary cross-entropy with or without focal loss based on class predictions.</li>
-                <li><math><mi>L</mi><sub>theta</sub></math> is the theta loss, using binary cross-entropy with or without focal loss based on the theta predictions.</li>
+                <li><math>
+                    <mi>L</mi><sub>reg</sub>
+                  </math> is the regression loss, computed as the mean of (1 - CIoU) for each bounding box.</li>
+                <li><math>
+                    <mi>L</mi><sub>conf</sub>
+                  </math> is the confidence loss, using binary cross-entropy with or without focal loss depending on
+                  objectness scores.</li>
+                <li><math>
+                    <mi>L</mi><sub>cls</sub>
+                  </math> is the class loss, using binary cross-entropy with or without focal loss based on class
+                  predictions.</li>
+                <li><math>
+                    <mi>L</mi><sub>theta</sub>
+                  </math> is the theta loss, using binary cross-entropy with or without focal loss based on the theta
+                  predictions.</li>
               </ul>
-            </p>
-            <div class="image-container">
-              <img src="static/images/yolov7_with_loss.png" alt="YOLOv7 with R3Det loss">
-              <div class="caption">YOLOv7 block diagram with custom loss function</div>
+              </p>
+              <div class="image-container">
+                <img src="static/images/yolov7_with_loss.png" alt="YOLOv7 with R3Det loss">
+                <div class="caption">YOLOv7 block diagram with custom loss function</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End of methodology -->
+  </section>
+  <!-- End of methodology -->
+
+  <!-- The Datasets -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">The Datasets</h2>
+          <div class="content has-text-justified">
+            <p>
+              Our research utilizes two primary datasets widely recognized within the object detection community. These
+              datasets, UCAS-AOD and DOTA, offer a rich collection of images and annotations that are essential for
+              training and evaluating our models.
+            </p>
+            <div class="flex-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+              <div class="flex-item" style="flex: 1 1 48%; margin-right: 4%;">
+                <h3 class="title is-4">UCAS-AOD Dataset</h3>
+                <ul>
+                  <li>One of the earliest datasets to use oriented bounding boxes</li>
+                  <li>Comprises 1500 images featuring two specific categories: planes and vehicles</li>
+                  <li>Designed to facilitate advances in object detection algorithms</li>
+                </ul>
+                <div class="image-container">
+                  <img src="static/images/ucas.png" alt="UCAS-AOD Dataset">
+                  <div class="caption">Instances per class label in UCAS Dataset</div>
+                </div>
+              </div>
+              <div class="flex-item" style="flex: 1 1 48%;">
+                <h3 class="title is-4">DOTA Dataset</h3>
+                <ul>
+                  <li>Targets object detection in aerial imagery (DOTA)</li>
+                  <li>Features a diverse set of 15 categories</li>
+                  <li>Encompasses 2806 images with 1,88,282 bounding boxes</li>
+                  <li>Unbalanced instances of classes</li>
+                </ul>
+                <div class="image-container">
+                  <img src="static/images/dota.png" alt="DOTA Dataset">
+                  <div class="caption">Instances per class label in DOTA Dataset</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of datasets -->
 
   <!-- Demo/Outputs -->
   <section class="section">
@@ -379,46 +473,16 @@
   </section>
   <!-- End youtube video -->
 
-
-
-
-  <!-- Video carousel -->
-  <!-- <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-  <!-- Your video file here -->
-  <!-- <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-  <!-- Your video file here -->
-  <!-- <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-  <!-- Your video file here -->
-  <!-- <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End video carousel -->
-
-
   <!-- Presentation -->
   <section class="hero is-small is-light" id="presentation">
     <div class="hero-body">
       <div class="container">
         <h2 class="title">Presentation</h2>
-        <iframe src="https://uwprod-my.sharepoint.com/personal/kumar273_wisc_edu/_layouts/15/Doc.aspx?sourcedoc={440e818a-e7d1-4084-81c1-248726773053}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <iframe
+          src="https://uwprod-my.sharepoint.com/personal/kumar273_wisc_edu/_layouts/15/Doc.aspx?sourcedoc={440e818a-e7d1-4084-81c1-248726773053}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+          width="100%" height="550px" frameborder="0">This is an embedded <a target="_blank"
+            href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+            href="https://office.com/webapps">Office</a>.</iframe>
 
       </div>
     </div>
@@ -505,7 +569,7 @@
 
 </body>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const gridContainer = document.getElementById('results-grid');
     const imageFolder = 'static/images/outputs/'; // Path to the folder
 
@@ -518,4 +582,5 @@
     }
   });
 </script>
+
 </html>
