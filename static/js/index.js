@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 })
 
-document.addEventListener('DOMContentLoaded', function() {
+$(document).addEventListener('DOMContentLoaded', function() {
     const gridContainer = document.getElementById('results-grid');
     const imageFolder = 'static/images/outputs/'; // Path to the folder
 
