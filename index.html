@@ -334,71 +334,6 @@
 </section>
 <!-- End of methodology -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-              Current popular detection methods can be divided into two-stage detectors and single-stage detectors.
-            <div class="flex-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-              <div class="flex-item" style="flex: 1 1 48%; margin-right: 4%;">
-                <h3>Two Stage Object Detectors</h3>
-                <p>Two-stage object detectors are slow but have higher accuracy.</p>
-                <p>They generate candidate regions through special modules, classify them, and finally determine the
-                  detection results using non-maximal suppression.</p>
-                <p>Examples include R-CNN, Fast R-CNN, and Faster R-CNN.</p>
-              </div>
-              <div class="flex-item" style="flex: 1 1 48%;">
-                <h3>Single Stage Object Detectors</h3>
-                <p>Single-stage object detectors are fast but have lower accuracy.</p>
-                <p>They adopt the idea of target regression and only need to perform feature extraction once to detect
-                  the target.</p>
-                <p>Examples include YOLO, SSD.</p>
-              </div>
-            </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End related work -->
-
   <!-- Demo/Outputs -->
   <section class="section">
     <div class="container">
@@ -530,4 +465,18 @@
   </footer>
 
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const gridContainer = document.getElementById('results-grid');
+    const imageFolder = 'static/images/outputs/'; // Path to the folder
+
+    for (let i = 1; i <= 36; i++) {
+      const img = document.createElement('img');
+      img.src = `${imageFolder}${i}.png`;
+      img.alt = `Image ${i}`;
+      img.className = 'grid-image';
+      gridContainer.appendChild(img);
+    }
+  });
+</script>
 </html>
