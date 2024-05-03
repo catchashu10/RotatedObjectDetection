@@ -29,6 +29,7 @@ body {
 
 
 .publication-title {
+  color: #FFF;
 }
 
 .publication-banner {
@@ -71,7 +72,7 @@ body {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   color: hsl(0, 0%, 0%) !important;
 }
 
 .publication-authors a:hover {
@@ -80,6 +81,7 @@ body {
 
 .author-block {
   display: inline-block;
+  color: #000;
 }
 
 .publication-banner img {
