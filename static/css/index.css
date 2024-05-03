@@ -133,5 +133,18 @@ body {
   font-size: smaller;
 }
 
-
-
+.image-container {
+  width: 100%;
+  margin: 20px auto; /* Centers the container */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+}
+.image-container img {
+  width: 100%; /* Makes image responsive */
+  height: auto;
+}
+.caption {
+  text-align: center;
+  color: #333;
+  padding: 8px;
+}
