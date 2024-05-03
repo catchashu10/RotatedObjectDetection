@@ -73,6 +73,7 @@ body {
 
 .publication-authors a {
    color: hsl(0, 0%, 0%) !important;
+   font-size: 1.3em;
 }
 
 .publication-authors a:hover {
