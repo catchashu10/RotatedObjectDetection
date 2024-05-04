@@ -56,7 +56,7 @@ This project aims to adapt the YOLOv7 model to detect arbitrarily oriented objec
 7. Make sure your files arrangment looks like the following</br>
     Note that each of your dataset folder in `data` should split into three files, namely `train`, `test`, and `detect`.
     ```
-    R-YOLOv4/
+    R-YOLOv7/
     ├── train.py
     ├── test.py
     ├── detect.py
@@ -93,7 +93,7 @@ Check all the settings in the .yaml files that you will use in the [/data](https
 $ python train.py --model_name DOTA_yolov7_csl_800 --config data/hyp.yaml --img_size 800 --data data/DOTA.yaml --epochs 100 --mode csl --ver yolov7
 ```
 
-You can run [display_inputs.py](https://github.com/kunnnnethan/R-YOLOv4/blob/main/display_inputs.py) to visualize whether your data is loaded successfully.
+You can run [display_inputs.py](https://github.com/catchashu10/RotatedObjectDetection/blob/main/R-YOLOv7/display_inputs.py) to visualize whether your data is loaded successfully.
 
 #### UCAS-AOD dataset
 
@@ -127,12 +127,36 @@ If you would like to use tensorboard for tracking training process.
 
 #### UCAS_AOD
 
-<img src="https://github.com/kunnnnethan/R-YOLOv4/blob/main/outputs/UCAS_AOD/P0292.png" alt="car" height="430"/>
-<img src="https://github.com/kunnnnethan/R-YOLOv4/blob/main/outputs/UCAS_AOD/P0769.png" alt="plane" height="413"/>
+| Method | Plane | Car | mAP |
+| -------- | -------- | -------- | -------- |
+| YOLOv7 (smoothL1-iou) | 98.70 | 91.40 | 95.00|
+
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/29.png" alt="car" height="430"/>
+<img src="hhttps://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/25.png" alt="plane" height="413"/>
 
 #### DOTA
 
-<img src="https://github.com/kunnnnethan/R-YOLOv4/blob/main/outputs/DOTA/P0006.png" alt="DOTA" height="430"/><img src="https://github.com/kunnnnethan/R-YOLOv4/blob/main/outputs/DOTA/P0031.png" alt="DOTA" height="430"/>
+| Class            | Images | Labels | Precision | Recall | mAP   |
+|------------------|--------|--------|-----------|--------|-------|
+| all              | 1017   | 21425  | 0.490     | 0.531  | 0.478 |
+| plane            | 1017   | 655    | 0.663     | 0.940  | 0.785 |
+| ship             | 1017   | 12745  | 0.801     | 0.851  | 0.858 |
+| storage tank     | 1017   | 136    | 0.662     | 0.485  | 0.484 |
+| baseball diamond | 1017   | 47     | 0.151     | 0.362  | 0.131 |
+| tennis court     | 1017   | 646    | 0.784     | 0.972  | 0.878 |
+| basketball court | 1017   | 70     | 0.546     | 0.957  | 0.719 |
+| ground track field | 1017  | 4      | 0.268     | 0.500  | 0.495 |
+| harbor           | 1017   | 1786   | 0.564     | 0.155  | 0.276 |
+| bridge           | 1017   | 10     | 0.000     | 0.000  | 0.003 |
+| large vehicle    | 1017   | 1778   | 0.633     | 0.685  | 0.684 |
+| small vehicle    | 1017   | 3067   | 0.720     | 0.529  | 0.601 |
+| helicopter       | 1017   | 29     | 0.353     | 0.207  | 0.084 |
+| roundabout       | 1017   | 14     | 0.608     | 0.555  | 0.526 |
+| soccer ball field | 1017  | 13     | 0.076     | 0.154  | 0.148 |
+| swimming pool    | 1017   | 425    | 0.522     | 0.619  | 0.493 |
+
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/11.png" alt="DOTA" height="430"/>
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/17.png" alt="DOTA" height="430"/>
 
 
 ### References
