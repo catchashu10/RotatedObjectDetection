@@ -132,7 +132,7 @@ If you would like to use tensorboard for tracking training process.
 | YOLOv7 (smoothL1-iou) | 98.70 | 91.40 | 95.00|
 
 <img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/29.png" alt="car" height="430"/>
-<img src="hhttps://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/25.png" alt="plane" height="413"/>
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/25.png" alt="plane" height="413"/>
 
 #### DOTA
 
