@@ -131,8 +131,8 @@ If you would like to use tensorboard for tracking training process.
 | -------- | -------- | -------- | -------- |
 | YOLOv7 (smoothL1-iou) | 98.70 | 91.40 | 95.00|
 
-<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/29.png" alt="car" height="430"/>
-<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/25.png" alt="plane" height="413"/>
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/29.png" alt="car" height="auto" width="600"/>
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/25.png" alt="plane" height="auto" width="600"/>
 
 #### DOTA
 
@@ -155,8 +155,8 @@ If you would like to use tensorboard for tracking training process.
 | soccer ball field | 1017  | 13     | 0.076     | 0.154  | 0.148 |
 | swimming pool    | 1017   | 425    | 0.522     | 0.619  | 0.493 |
 
-<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/11.png" alt="DOTA" height="430"/>
-<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/17.png" alt="DOTA" height="430"/>
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/11.png" alt="DOTA" height="auto" width="600"/>
+<img src="https://github.com/catchashu10/RotatedObjectDetection/blob/main/static/images/outputs/17.png" alt="DOTA" height="auto" width="600"/>
 
 
 ### References
