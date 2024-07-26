@@ -1,4 +1,4 @@
-## CS 766 Computer Vision Project
+# CS 766 Computer Vision Project
 
 ### Introduction
 This project aims to adapt the YOLOv7 model to detect arbitrarily oriented objects in remote-sensing images. To achieve this, modifying the original loss function of the model is required. We obtained a successful result by increasing the number of anchor boxes with different rotating angles and combining the smooth-L1-IoU loss function proposed by [R3Det: Refined Single-Stage Detector with Feature Refinement for Rotating Object](https://arxiv.org/abs/1908.05612) into the original loss for generating bounding boxes.
